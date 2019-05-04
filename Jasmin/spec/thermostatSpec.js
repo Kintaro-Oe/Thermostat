@@ -98,4 +98,16 @@ describe('Thermostat', function() {
     });
   });
 
+  describe('edge case', function() {
+    it('PSM off temperature above 25. PSM back on, cannot rise any higher', function() {
+      thermostat.switchPowerSavingModeOff();
+      for(i = 0; i < 13; i++) {
+      thermostat.up();
+      }
+      thermostat.switchPowerSavingModeOn();
+      thermostat.up()
+      expect(thermostat.getCurrentTemp()).toBeLessThan(33)
+    });
+  });
+
 });

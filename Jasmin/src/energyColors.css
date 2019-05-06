@@ -1,11 +1,94 @@
 .low-usage {
-  color: green;
+  color: MediumAquamarine;
 }
 
 .medium-usage {
-  color: black;
+  color: orange;
 }
 
 .high-usage {
   color: red;
+}
+
+* {
+  font-family: Arial;
+  color: white;
+}
+
+.font-size {
+  font-size: 50px;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.button {
+  background-color: grey;
+  border: white 1px solid;
+  border-radius: 10px;
+  height: auto;
+  width: auto;
+  font-size: 22px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+}
+
+#thermostat {
+  border: 1px solid black;
+  background-image: linear-gradient(red, orange, aqua);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  height: 400px;
+  width: 300px;
+  border-radius: 5%;
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+#temperature-display {
+  height: auto;
+  width: auto;
+  padding: 15px;
+  margin: 10px;
+  background-color: black;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 42px;
+  border-radius: 10px;
+  border: 5px solid white;
+}
+
+#temperature-up {
+  width: 50px;
+  margin-top:20px;
+}
+
+#temperature-down {
+  width: 50px;
+  margin-top:20px;
+}
+
+#temperature-reset {
+  width: 100px;
+}
+
+#city-temperature {
+  background-color: black;
+  opacity: 0.6;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  padding: 14px;
+  color: white;
+}
+
+#select-city {
+  background-color: grey;
+  font-size: 14px;
+}
+
+#current-temperature {
+  color: white;
 }

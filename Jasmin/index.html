@@ -9,28 +9,36 @@
     <script src="src/jquery.js"></script>
     <script src="src/thermostat.js"></script>
     <script src="src/jqueryIndexCode.js"></script>
-    <section>
-      <h1>Thermostat</h1>
-      <h2 id="temperature"></h2>
+    <div class="wrapper">
+      <div id="thermostat">
+        <h1>Thermostat</h1>
+        <div id="temperature-display">
+          <span id="temperature"></span><span>&deg;C</span>
+        </div>
+          <br>
+          <button id="temperature-down" class="button">-</button>
+          <button id="temperature-up" class="button">+</button>
+
+          <button id="temperature-reset" class="button">reset</button>
+          </br>
+          <p>
+            Power Saving Mode: Currently <span id="power-saving-status"></span>
+          </p>
+          <button id="PSM-on" class="button">on</button>
+          <button id="PSM-off" class="button">off</button>
+      </div>
       <p>
-        <button id="temperature-up">+</button>
-        <button id="temperature-down">-</button>
-        <button id="temperature-reset">reset</button>
-        power saving mode is <span id="power-saving-status"></span>
-        <button id="PSM-on">on</button>
-        <button id="PSM-off">off</button>
+        <div id="city-temperature">
+          <select id="select-city">
+            <option value="">Select Location</option>
+            <option value="2643743">London</option>
+            <option value="5128581">New York</option>
+            <option value="2988507">Paris</option>
+            <option value="1850147">Tokyo</option>
+          </select>
+            Current Temperature: <span id="current-temperature">&deg;C</span>
+        </div>
       </p>
-    </section>
-    <section>
-      City:
-      <select id="select-city">
-        <option value="">None Selected</option>
-        <option value="2643743">London</option>
-        <option value="5128581">New York</option>
-        <option value="2988507">Paris</option>
-        <option value="1850147">Tokyo</option>
-      </select>
-      <h3>Current temperature outside: <span id="current-temperature"></span></h3>
-    </section>
+    </div>
   </body>
 </html>

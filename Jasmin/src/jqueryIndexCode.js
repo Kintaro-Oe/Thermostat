@@ -17,7 +17,7 @@ $(document).ready(function() {
 
   var thermostat = new Thermostat();
   updateTemperature();
-  $('#power-saving-status').text('on')
+  $('#power-saving-status').text('ON')
 
   $('#temperature-up').on('click', function() {
     thermostat.up(); //update model
@@ -37,12 +37,12 @@ $(document).ready(function() {
   $('#PSM-on').on('click', function() {
     thermostat.switchPowerSavingModeOn();
     thermostat.isPowerSavingModeOn()
-    $('#power-saving-status').text('on')
+    $('#power-saving-status').text('ON')
   })
 
   $('#PSM-off').on('click', function() {
     thermostat.switchPowerSavingModeOff();
-    $('#power-saving-status').text('off')
+    $('#power-saving-status').text('OFF')
   })
 
   function updateTemperature() {
